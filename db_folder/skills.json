@@ -1,0 +1,101 @@
+{
+  "learnt_skills": [
+    {
+      "id": 1,
+      "title": "C++",
+      "category": "Programming Language",
+      "mastery": "Advanced Beginner"
+    },
+
+    {
+      "id": 2,
+      "title": "Java",
+      "category": "Programming Language",
+      "mastery": "Beginner"
+    },
+
+    {
+      "id": 3,
+      "title": "Dart",
+      "category": "Programming Language",
+      "mastery": "Advanced Beginner"
+    },
+
+    {
+      "id": 4,
+      "title": "Python",
+      "category": "Programming Language",
+      "mastery": "Advanced Beginner"
+    },
+
+    {
+      "id": 5,
+      "title": "Web Development",
+      "category": "Programming Field",
+      "mastery": "Advanced Beginner"
+    },
+
+    {
+      "id": 6,
+      "title": "Software Development",
+      "category": "Programming Field",
+      "mastery": "Competent"
+    },
+
+    {
+      "id": 7,
+      "title": "Mobile Development",
+      "category": "Programming Field",
+      "mastery": "Advanced Beginner"
+    },
+
+    {
+      "id": 8,
+      "title": "Database/Server Setup",
+      "category": "Programming Field",
+      "mastery": "Novice"
+    },
+
+    {
+      "id": 9,
+      "title": "Essay Writing",
+      "category": "Academic Writing",
+      "mastery": "Competent"
+    },
+
+    {
+      "id": 10,
+      "title": "Research Writing",
+      "category": "Academic Writing",
+      "mastery": "Competent"
+    },
+
+    {
+      "id": 11,
+      "title": "Poetry",
+      "category": "Creative Writing",
+      "mastery": "Proficient"
+    },
+
+    {
+      "id": 12,
+      "title": "Fiction Writing",
+      "category": "Creative Writing",
+      "mastery": "Proficient"
+    },
+
+    {
+      "id": 13,
+      "title": "Journalism",
+      "category": "Creative Writing",
+      "mastery": "Competent"
+    },
+
+    {
+      "id": 14,
+      "title": "Public Speaking",
+      "category": "Communication",
+      "mastery": "Proficient"
+    }
+  ]
+}

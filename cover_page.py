@@ -1,7 +1,7 @@
 import time
 import sys
 import runpy
-from chap_1 import chap_1_pages
+from chap_1 import _learntskills
 from auth_info import _auth
 
 print("-" * 80)
@@ -35,6 +35,6 @@ def main_select():
     elif user_chap == ">":
         _auth()
     elif user_chap == ">>":
-        chap_1_pages()
+        _learntskills()
 
 main_select()

@@ -1,8 +1,9 @@
 import time
 import runpy
 import sys
+import json
 
-def chap_1_pages():
+def _learntskills():
 
     def _print(string):
         sys.stdout.write(string)
@@ -15,9 +16,7 @@ def chap_1_pages():
     time.sleep(1.5)
     print("-" * 80)
 
-    print("|| 1.) Project1 ||")
-    print("|| 2.) Project2 ||")
-    print("|| 3.) Project3 ||")
+    from db_folder import skills
 
     print("<<--Cover Page" " | " "<--About the Author" " | " "Chapter 2-->")
 

@@ -20,7 +20,7 @@ def _auth():
     print("<--Cover Page" " | " "Chapter 1-->" " | " "Chapter 2-->>")
 
     from cover_page import main_select
-    from chap_1 import chap_1_pages
+    from chap_1 import _learntskills
     from cover_page import menu
 
     user_chap = input("(<, >, or >>): ")

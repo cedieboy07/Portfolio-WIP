@@ -1,25 +1,11 @@
 import time
 import sys
-import runpy
 from chap_1 import _learntskills
 from auth_info import _auth
-
-print("-" * 80)
-print("Hello Everyone!!")
-time.sleep(2.5)
-print("Welcome to my portfolio!")
-time.sleep(2.5)
-print("Fill free to browse through each chapter and view their contents")
-time.sleep(2.5)
-
-print("-" * 80)
 
 
 def menu(chaps):
     return f"{chaps}"
-
-
-print(menu("x--End Program" " | " "About the Author-->" " | " "Chapter 1-->>"))
 
 
 def main_select():
@@ -37,4 +23,20 @@ def main_select():
     elif user_chap == ">>":
         _learntskills()
 
-main_select()
+
+def main():
+    print("-" * 80)
+    print("Hello Everyone!!")
+    time.sleep(2.5)
+    print("Welcome to my portfolio!")
+    time.sleep(2.5)
+    print("Fill free to browse through each chapter and view their contents")
+    time.sleep(2.5)
+
+    print("-" * 80)
+    print(menu("x--End Program" " | " "About the Author-->" " | " "Chapter 1-->>"))
+    main_select()
+
+
+if __name__ == "__main__":
+    main()

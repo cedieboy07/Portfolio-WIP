@@ -3,6 +3,7 @@ import runpy
 import sys
 import json
 
+
 def _learntskills():
 
     def _print(string):
@@ -16,9 +17,13 @@ def _learntskills():
     time.sleep(1.5)
     print("-" * 80)
 
-    from db_folder import skills
+    from db_folder.skills import show_skills_menu
 
+    show_skills_menu()
+
+    print("-" * 80)
     print("<<--Cover Page" " | " "<--About the Author" " | " "Chapter 2-->")
+    print("-" * 80)
 
     from cover_page import main_select
     from auth_info import _auth

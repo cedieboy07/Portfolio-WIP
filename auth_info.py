@@ -1,6 +1,7 @@
 import time
 import runpy
 
+
 def _auth():
     print("-" * 80)
     print("ABOUT THE AUTHOR")
@@ -30,5 +31,4 @@ def _auth():
         print(menu("x--End Program" " | " "About the Author-->" " | " "Chapter 1-->>"))
         main_select()
     elif user_chap == ">":
-        chap_1_pages()
-
+        _learntskills()

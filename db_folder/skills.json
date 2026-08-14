@@ -93,6 +93,13 @@
 
     {
       "id": 14,
+      "title": "Script Writing",
+      "category": "Writing",
+      "mastery": "Proficient"
+    },
+
+    {
+      "id": 15,
       "title": "Public Speaking",
       "category": "Communication",
       "mastery": "Proficient"

@@ -22,6 +22,7 @@ def _auth():
 
     from cover_page import main_select
     from chap_1 import _learntskills
+    from chap_2 import _writtenworks
     from cover_page import menu
 
     user_chap = input("(<, >, or >>): ")
@@ -32,3 +33,5 @@ def _auth():
         main_select()
     elif user_chap == ">":
         _learntskills()
+    elif user_chap == ">>":
+        _writtenworks()

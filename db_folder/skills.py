@@ -19,6 +19,15 @@ rank_order = {
     "Expert": 5,
 }
 
+skill_items = [
+    "1.) ALL",
+    "2.) PROGRAMMING LANGUAGES",
+    "3.) PROGRAMMING FIELDS",
+    "4.) WRITING",
+    "5.) COMMUNICATION",
+    "x.) CHAPTER SELECT"
+]
+
 
 def display_all_skills(skills):
     print("--- ALL SKILLS ---")
@@ -50,31 +59,34 @@ def show_skills_menu():
     skills = load_skills()
 
     while True:
-        user_skills = (
+        width = 20
+        
+        for item in skill_items:
+            print(f"|| {item:<{width}} ||")
+
+        user_choice = (
             input(
-                "Do you want to view all skills, specific categories, or return to chapter selection? (all/languages/field/writing/communication/x): "
+                "Choose the number of the skill you wish to view, or X to go back to chapter select: "
             )
             .strip()
             .lower()
         )
 
-        if user_skills == "all":
+        if user_choice == "1":
             display_all_skills(skills)
-        elif user_skills == "languages":
+        elif user_choice == "2":
             display_skills_by_category(skills, "Programming Language")
-        elif user_skills == "field":
+        elif user_choice == "3":
             display_skills_by_category(skills, "Programming Field")
-        elif user_skills == "writing":
+        elif user_choice == "4":
             display_skills_by_category(skills, "Writing")
-        elif user_skills == "communication":
+        elif user_choice == "5":
             display_skills_by_category(skills, "Communication")
-        elif user_skills == "x":
+        elif user_choice == "x":
             print("Returning to chapter selection...")
             break
         else:
-            print(
-                "Invalid choice. Please type 'all', 'languages', 'field', 'writing', 'communication', or 'x'."
-            )
+            print("Invalid choice. Please type '1', '2', '3', '4', '5', or 'x'.")
 
 
 if __name__ == "__main__":

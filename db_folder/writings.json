@@ -1,0 +1,109 @@
+{
+    "written_works": [
+        {
+            "id": 1,
+            "title": "An EPIC Musical has come to an EPIC Conclusion",
+            "category": "Journalism",
+            "description": "A comprehensive analysis of the latest musical production and its impact on the industry.",
+            "URL": "<insert url here>"
+        },
+        {
+            "id": 2,
+            "title": "A Test of Accountability and Trust: 2025 Anti-Corruption Scandals",
+            "category": "Journalism",
+            "description": "An investigation into the recent anti-corruption scandals and their implications.",
+            "URL": "<insert url here>"
+        },
+        {
+            "id": 3,
+            "title": "FOL 2025: Building a Secure Foundation for Future Developers",
+            "category": "Journalism",
+            "description": "A look at the latest trends in software development and their impact on the industry.",
+            "URL": "<insert url here>"
+        },
+        {
+            "id": 4,
+            "title": "Festival of Learning 2025: JEOPARDY!!",
+            "category": "Journalism",
+            "description": "CIIT students play a game of jeopardy.",
+            "URL": "<insert url here>"
+        },
+        {
+            "id": 5,
+            "title": "Game Time Begins at CIIT's Gaming Area",
+            "category": "Journalism",
+            "description": "Gaming area opens for students to play various games.",
+            "URL": "<insert url here>"
+        },
+        {
+            "id": 6,
+            "title": "Factors Assisting New Students' Adaptation to The Philippine School's Senior High School: Basis for Improving Educational Environment",
+            "category": "Academic Writing",
+            "description": "An analysis of the factors that assist new students in adapting to the Philippine School's Senior High School and the basis for improving the educational environment.",
+            "URL": "<insert url here>"
+        },
+        {
+            "id": 7,
+            "title": "Exploring St. Augustine's Philosophical Values",
+            "category": "Academic Writing",
+            "description": "A study of the philosophical values of St. Augustine and their relevance to myself.",
+            "URL": "<insert url here>"
+        },
+        {
+            "id": 8,
+            "title": "A Reflection on Erik Erikson's Psychosocial Stages of Development",
+            "category": "Academic Writing",
+            "description": "A reflection on Erik Erikson's psychosocial stages of development and their implications to myself.",
+            "URL": "<insert url here>"
+        },
+        {
+            "id": 9,
+            "title": "The Foundation of Future Works: Why Society Must Encourage Childhood Fixations",
+            "category": "Academic Writing",
+            "description": "An exploration of how societal support for childhood interests can foster innovation and creativity.",
+            "URL": "<insert url here>"
+        },
+        {
+            "id": 10,
+            "title": "My Mind Map: A Geographical Representation of My Thoughts and Identity",
+            "category": "Creative Writing",
+            "description": "A visual representation of my thoughts and identity.",
+            "URL": "<insert url here>"
+        },
+        {
+            "id": 11,
+            "title": "Soldiers of Pigment and Circuit: An Ode for the Students of CIIT",
+            "category": "Creative Writing",
+            "description": "A tribute to the students of CIIT and their contributions to the field of art and technology.",
+            "URL": "<insert url here>"
+        },
+        {
+            "id": 12,
+            "title": "The Puppeteer",
+            "category": "Creative Writing",
+            "description": "An allegorical narrative of the dependency to Artifical Intelligence.",
+            "URL": "<insert url here>"
+        },
+        {
+            "id": 13,
+            "title": "Dungeon Messy: Tales of the Iris",
+            "category": "Creative Writing",
+            "description": "An unofficial sourcebook for Dungeons and Dragons about the Continent of the Iris.",
+            "URL": "<insert url here>"
+        },
+        {
+            "id": 14,
+            "title": "Saurousschia: Oxolynn's City of Dinosaurs",
+            "category": "Creative Writing",
+            "description": "A detailed account of the fictional city of Saurousschia and its history.",
+            "URL": "<insert url here>"
+        },
+        {
+            "id": 15,
+            "title": "The Dorne Family: Renowened Prehistorians and Draconologists",
+            "category": "Creative Writing",
+            "description": "A detailed character showcase of the Dorne family.",
+            "URL": "<insert url here>"
+        }
+    ]
+}

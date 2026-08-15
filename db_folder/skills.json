@@ -103,6 +103,36 @@
       "title": "Public Speaking",
       "category": "Communication",
       "mastery": "Proficient"
+    },
+    {
+      "id": 16,
+      "title": "Google Docs/Microsoft Word",
+      "category":"Technical Skills",
+      "mastery": "Proficient"
+    },
+    {
+      "id": 17,
+      "title": "Google Sheets/Microsoft Excel",
+      "category":"Technical Skills",
+      "mastery": "Proficient"
+    },
+    {
+      "id": 18,
+      "title": "Google Slides/Microsoft PowerPoint",
+      "category":"Technical Skills",
+      "mastery": "Proficient"
+    },
+    {
+      "id": 19,
+      "title": "Decision Making",
+      "category": "Critical Thinking",
+      "mastery": "Competent"
+    },
+    {
+      "id": 20,
+      "title": "Creativity",
+      "category": "Critical Thinking",
+      "mastery": "Proficient"
     }
   ]
 }

@@ -25,6 +25,8 @@ skill_items = [
     "3.) PROGRAMMING FIELDS",
     "4.) WRITING",
     "5.) COMMUNICATION",
+    "6.) TECHNICAL SKILLS",
+    "7.) PROGRAMMING STUDIOS",
     "x.) CHAPTER SELECT"
 ]
 
@@ -59,7 +61,7 @@ def show_skills_menu():
     skills = load_skills()
 
     while True:
-        width = 20
+        width = 25
         
         for item in skill_items:
             print(f"|| {item:<{width}} ||")
@@ -82,11 +84,15 @@ def show_skills_menu():
             display_skills_by_category(skills, "Writing")
         elif user_choice == "5":
             display_skills_by_category(skills, "Communication")
+        elif user_choice == "6":
+            display_skills_by_category(skills, "Technical Skills")
+        elif user_choice == "7":
+            display_skills_by_category(skills, "Programming Studio")
         elif user_choice == "x":
             print("Returning to chapter selection...")
             break
         else:
-            print("Invalid choice. Please type '1', '2', '3', '4', '5', or 'x'.")
+            print("Invalid choice. Please type '1', '2', '3', '4', '5', '6', '7' or 'x'.")
 
 
 if __name__ == "__main__":

@@ -106,42 +106,48 @@
     },
     {
       "id": 16,
+      "title": "Emailing",
+      "category": "Communication",
+      "mastery": "Proficient"
+    },
+    {
+      "id": 17,
       "title": "Google Docs/Microsoft Word",
       "category":"Technical Skill",
       "mastery": "Proficient"
     },
     {
-      "id": 17,
+      "id": 18,
       "title": "Google Sheets/Microsoft Excel",
       "category":"Technical Skill",
       "mastery": "Proficient"
     },
     {
-      "id": 18,
+      "id": 19,
       "title": "Google Slides/Microsoft PowerPoint",
       "category":"Technical Skill",
       "mastery": "Proficient"
     },
     {
-      "id": 19,
+      "id": 20,
       "title": "Canva",
       "category": "Technical Skill",
       "mastery": "Competent"
     },
     {
-      "id": 20,
+      "id": 21,
       "title": "Adobe Premiere Pro",
       "category": "Technical Skill",
       "mastery": "Proficient"
     },
     {
-      "id": 21,
+      "id": 22,
       "title": "Android Studio",
       "category": "Programming Studio",
       "mastery": "Competent"
     },
     {
-      "id": 22,
+      "id": 23,
       "title": "Visual Studio Code",
       "category": "Programming Studio",
       "mastery": "Competent"

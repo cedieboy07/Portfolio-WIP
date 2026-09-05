@@ -85,7 +85,7 @@ def show_skills_menu():
         elif user_choice == "5":
             display_skills_by_category(skills, "Communication")
         elif user_choice == "6":
-            display_skills_by_category(skills, "Technical Skills")
+            display_skills_by_category(skills, "Technical Skill")
         elif user_choice == "7":
             display_skills_by_category(skills, "Programming Studio")
         elif user_choice == "x":

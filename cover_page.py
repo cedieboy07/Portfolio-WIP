@@ -2,7 +2,7 @@ import time
 import sys
 from chap_1 import _learntskills
 from auth_info import _auth
-
+from assets.ascii import menu_banner
 
 def menu(chaps):
     return f"{chaps}"
@@ -28,7 +28,9 @@ def main():
     print("-" * 80)
     print("Hello Everyone!!")
     time.sleep(2.5)
-    print("Welcome to my portfolio!")
+    print("Welcome to....")
+    time.sleep(2.5)
+    menu_banner()
     time.sleep(2.5)
     print("Fill free to browse through each chapter and view their contents")
     time.sleep(2.5)

@@ -2,17 +2,13 @@ import time
 import runpy
 import sys
 import json
+from assets.ascii import chap2_banner
 
 def _writtenworks():
 
-    def _print(string):
-        sys.stdout.write(string)
-        sys.stdout.flush()
-
     print("-" * 80)
-    _print("CHAPTER 2: ")
     time.sleep(1.5)
-    print("My Written Works")
+    chap2_banner()
     time.sleep(1.5)
     print("-" * 80)
 

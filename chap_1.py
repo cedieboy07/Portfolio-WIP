@@ -2,17 +2,13 @@ import time
 import runpy
 import sys
 import json
+from assets.ascii import chap1_banner
 
 def _learntskills():
 
-    def _print(string):
-        sys.stdout.write(string)
-        sys.stdout.flush()
-
     print("-" * 80)
-    _print("CHAPTER 1: ")
     time.sleep(1.5)
-    print("My Learnt Skills")
+    chap1_banner()
     time.sleep(1.5)
     print("-" * 80)
 

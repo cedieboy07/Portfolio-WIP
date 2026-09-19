@@ -32,7 +32,7 @@ def main():
     time.sleep(2.5)
     menu_banner()
     time.sleep(2.5)
-    print("Fill free to browse through each chapter and view their contents")
+    print("Feel free to browse through each chapter and view their contents")
     time.sleep(2.5)
 
     print("-" * 80)

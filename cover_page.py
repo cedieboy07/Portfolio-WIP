@@ -4,6 +4,7 @@ from chap_1 import _learntskills
 from auth_info import _auth
 from assets.ascii import menu_banner
 
+
 def menu(chaps):
     return f"{chaps}"
 

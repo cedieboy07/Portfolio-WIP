@@ -43,3 +43,14 @@ def chap2_banner():
     line3_lines = line3.splitlines()
     for left, middle, right in zip(line1_lines, line2_lines, line3_lines):
         print(left + "   " + middle + "   " + right)
+
+def chap3_banner():
+    line1 = pyfiglet.figlet_format("My", font="gothic")
+    line2 = pyfiglet.figlet_format("Created", font="gothic")
+    line3 = pyfiglet.figlet_format("Programs", font="gothic")
+
+    line1_lines = line1.splitlines()
+    line2_lines = line2.splitlines()
+    line3_lines = line3.splitlines()
+    for left, middle, right in zip(line1_lines, line2_lines, line3_lines):
+        print(left + "   " + middle + "   " + right)

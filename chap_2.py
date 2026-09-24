@@ -22,6 +22,7 @@ def _writtenworks():
 
     from cover_page import main_select
     from chap_1 import _learntskills
+    from chap_3 import _createdprograms
     from cover_page import menu
 
     user_chap = input("(x, <, or >): ")
@@ -33,4 +34,4 @@ def _writtenworks():
     elif user_chap == "<":
         _learntskills()
     elif user_chap == ">":
-        runpy.run_path("chap_2.py")
+        _createdprograms()

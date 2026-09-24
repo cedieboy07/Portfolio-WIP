@@ -1,8 +1,15 @@
 ﻿import json
+import sys
+from pathlib import Path
 
 
-def load_skills(file_path="db_folder/skills.json"):
+def load_skills(file_path=None):
     try:
+        if file_path is None:
+            base_path = Path(
+                getattr(sys, "_MEIPASS", Path(__file__).resolve().parents[1])
+            )
+            file_path = base_path / "db_folder" / "skills.json"
         with open(file_path, "r", encoding="utf-8") as file:
             return json.load(file)
     except FileNotFoundError:
@@ -27,7 +34,7 @@ skill_items = [
     "5.) COMMUNICATION",
     "6.) TECHNICAL SKILLS",
     "7.) PROGRAMMING STUDIOS",
-    "x.) CHAPTER SELECT"
+    "x.) CHAPTER SELECT",
 ]
 
 
@@ -62,7 +69,7 @@ def show_skills_menu():
 
     while True:
         width = 25
-        
+
         for item in skill_items:
             print(f"|| {item:<{width}} ||")
 
@@ -92,7 +99,9 @@ def show_skills_menu():
             print("Returning to chapter selection...")
             break
         else:
-            print("Invalid choice. Please type '1', '2', '3', '4', '5', '6', '7' or 'x'.")
+            print(
+                "Invalid choice. Please type '1', '2', '3', '4', '5', '6', '7' or 'x'."
+            )
 
 
 if __name__ == "__main__":

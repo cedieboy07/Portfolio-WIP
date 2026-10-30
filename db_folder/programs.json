@@ -1,19 +1,50 @@
 {
     "created_programs": [
         {
-            "title": "Portfolio Website",
-            "description": "A personal portfolio website showcasing my projects and skills.",
-            "category": "Web Program"
+            "id": 1,
+            "title": "Messy Dice",
+            "description": "An online retail website that sells a variety of dice with unique designs and materials.",
+            "category": "Web Program",
+            "status": "Completed",
+            "URL": "https://github.com/cedieboy07/CS221_WEBDEV_CHARLESNEVALGA"
         },
         {
-            "title": "Task Manager App",
-            "description": "A mobile application to manage daily tasks and to-do lists.",
-            "category": "Mobile Application"
+            "id": 2,
+            "title": "Dacean Finance Guild",
+            "description": "An fantasy themed online quiz website that test users' proficiency in handling their finances and ranking them based on their scores.",
+            "category": "Web Program",
+            "status": "Completed",
+            "URL": "https://github.com/cedieboy07/Dacean-Finance-Guild"
         },
         {
-            "title": "Inventory Management System",
-            "description": "A software program for managing inventory in a small business.",
-            "category": "Software Program"
+            "id": 3,
+            "title": "Hotel and Restaurant Management System",
+            "description": "A simple C++ program that manages hotel and restaurant operations, including reservations, billing, and order management.",
+            "category": "Software Program",
+            "status": "Completed",
+            "URL": "https://github.com/cedieboy07/comProg_finals"
+        },
+        {
+            "id": 4,
+            "title": "Ward Management System",
+            "description": "A Python program that manages ward operations in a hospital setting.",
+            "category": "Software Program",
+            "status": "Completed",
+            "URL": "https://github.com/cedieboy07/Ward_management"
+        },
+        {
+            "id": 5,
+            "title": "Virtual Table Top for Dungeons and Dragons",
+            "description": "A software that allows players to play Dungeons and Dragons online with a virtual tabletop interface with added video and voice chat.",
+            "category": "Software Program",
+            "status": "In Progress"
+        },
+        {
+            "id": 6,
+            "title": "Terminal Based Adventure Game",
+            "description": "A text-based adventure game that runs in the terminal, allowing players to play pre-defined scenarios.",
+            "category": "Software Program",
+            "status": "In Progress"
         }
     ]
 }

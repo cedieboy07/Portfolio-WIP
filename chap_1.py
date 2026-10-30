@@ -17,15 +17,16 @@ def _learntskills():
     show_skills_menu()
 
     print("-" * 80)
-    print("<<--Cover Page" " | " "<--About the Author" " | " "Chapter 2-->")
+    print("<<--Cover Page" " | " "<--About the Author" " | " "Chapter 2-->" " | " "Chapter 3-->>")
     print("-" * 80)
 
     from cover_page import main_select
     from auth_info import _auth
     from chap_2 import _writtenworks
+    from chap_3 import _createdprograms
     from cover_page import menu
 
-    user_chap = input("(<<, <, or >): ")
+    user_chap = input("(<<, <, >, or >>): ")
 
     if user_chap == "<<":
         print("-" * 80)
@@ -35,3 +36,5 @@ def _learntskills():
         _auth()
     elif user_chap == ">":
         _writtenworks()
+    elif user_chap == ">>":
+        _createdprograms()

@@ -17,11 +17,12 @@ def _createdprograms():
     show_programs_menu()
 
     print("-" * 80)
-    print("x--Cover Page" " | " "<--Chapter 1" " | " "Chapter 3-->")
+    print("x--Cover Page" " | " "<--Chapter 2" " | " "Final Chapter-->")
     print("-" * 80)
 
     from cover_page import main_select
     from chap_2 import _writtenworks
+    from final_chap import _bestworks
     from cover_page import menu
 
     user_chap = input("(x, <, or >): ")
@@ -33,4 +34,4 @@ def _createdprograms():
     elif user_chap == "<":
         _writtenworks()
     elif user_chap == ">":
-        runpy.run_path("chap_2.py")
+        _bestworks()

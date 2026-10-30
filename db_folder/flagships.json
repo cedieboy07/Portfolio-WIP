@@ -1,0 +1,19 @@
+{
+    "best_works": [
+        {
+            "title": "Portfolio Website",
+            "description": "A personal portfolio website showcasing my projects and skills.",
+            "category": "Programming "
+        },
+        {
+            "title": "Task Manager App",
+            "description": "A mobile application to manage daily tasks and to-do lists.",
+            "category": "Writing"
+        },
+        {
+            "title": "Inventory Management System",
+            "description": "A software program for managing inventory in a small business.",
+            "category": "Editing"
+        }
+    ]
+}

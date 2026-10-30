@@ -33,7 +33,7 @@ def display_programs_by_category(programs, target_category):
         if item.get("category") == target_category
     ]
     for item in filtered:
-        print(f"Title: {item['title']} \n Description: {item['description']}")
+        print(f"Title: {item['title']} \n Description: {item['description']} \n Status: {item['status']} \n URL: {item['URL']}")
         print("-" * 80)
 
 

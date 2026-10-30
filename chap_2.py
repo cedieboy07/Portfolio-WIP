@@ -17,7 +17,7 @@ def _writtenworks():
     show_writings_menu()
 
     print("-" * 80)
-    print("x--Cover Page" " | " "<--Chapter 1" " | " "Chapter 3-->")
+    print("x--Cover Page" " | " "<--Chapter 1" " | " "Chapter 3--> | " "Final Chapter-->>")
     print("-" * 80)
 
     from cover_page import main_select
@@ -25,7 +25,7 @@ def _writtenworks():
     from chap_3 import _createdprograms
     from cover_page import menu
 
-    user_chap = input("(x, <, or >): ")
+    user_chap = input("(x, <, >, or >>): ")
 
     if user_chap == "x":
         print("-" * 80)

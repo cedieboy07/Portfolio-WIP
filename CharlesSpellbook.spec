@@ -1,7 +1,7 @@
 # -*- mode: python ; coding: utf-8 -*-
 from PyInstaller.utils.hooks import collect_all
 
-datas = [('db_folder/skills.json', 'db_folder'), ('db_folder/writings.json', 'db_folder'), ('db_folder/programs.json', 'db_folder')]
+datas = [('db_folder/skills.json', 'db_folder'), ('db_folder/writings.json', 'db_folder'), ('db_folder/programs.json', 'db_folder'), ('db_folder/flagships.json', 'db_folder')]
 binaries = []
 hiddenimports = []
 tmp_ret = collect_all('pyfiglet')

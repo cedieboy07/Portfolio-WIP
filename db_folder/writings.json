@@ -86,20 +86,13 @@
         },
         {
             "id": 13,
-            "title": "Dungeon Messy: Tales of the Iris",
-            "category": "Creative Writing",
-            "description": "An unofficial sourcebook for Dungeons and Dragons about the Continent of the Iris.",
-            "URL": "<insert url here>"
-        },
-        {
-            "id": 14,
             "title": "Saurousschia: Oxolynn's City of Dinosaurs",
             "category": "Creative Writing",
             "description": "A detailed account of the fictional city of Saurousschia and its history.",
             "URL": "<insert url here>"
         },
         {
-            "id": 15,
+            "id": 14,
             "title": "The Dorne Family: Renowened Prehistorians and Draconologists",
             "category": "Creative Writing",
             "description": "A detailed character showcase of the Dorne family.",

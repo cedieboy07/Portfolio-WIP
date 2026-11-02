@@ -2,6 +2,7 @@ import pyfiglet
 import sys
 import time
 
+
 def menu_banner():
     charles = pyfiglet.figlet_format("Charles'", font="gothic")
     spellbook = pyfiglet.figlet_format("Spellbook", font="gothic")
@@ -12,6 +13,7 @@ def menu_banner():
     for left, right in zip(charles_lines, spellbook_lines):
         print(left + "   " + right)
 
+
 def auth_banner():
     line1 = pyfiglet.figlet_format("About the", font="gothic")
     line2 = pyfiglet.figlet_format("Author", font="gothic")
@@ -21,6 +23,7 @@ def auth_banner():
 
     for left, right in zip(line1_lines, line2_lines):
         print(left + "   " + right)
+
 
 def chap1_banner():
     line1 = pyfiglet.figlet_format("My", font="gothic")
@@ -33,6 +36,7 @@ def chap1_banner():
     for left, middle, right in zip(line1_lines, line2_lines, line3_lines):
         print(left + "   " + middle + "   " + right)
 
+
 def chap2_banner():
     line1 = pyfiglet.figlet_format("My", font="gothic")
     line2 = pyfiglet.figlet_format("Written", font="gothic")
@@ -44,6 +48,7 @@ def chap2_banner():
     for left, middle, right in zip(line1_lines, line2_lines, line3_lines):
         print(left + "   " + middle + "   " + right)
 
+
 def chap3_banner():
     line1 = pyfiglet.figlet_format("My", font="gothic")
     line2 = pyfiglet.figlet_format("Created", font="gothic")
@@ -54,6 +59,7 @@ def chap3_banner():
     line3_lines = line3.splitlines()
     for left, middle, right in zip(line1_lines, line2_lines, line3_lines):
         print(left + "   " + middle + "   " + right)
+
 
 def final_chap_banner():
     line1 = pyfiglet.figlet_format("My", font="gothic")

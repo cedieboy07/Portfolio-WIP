@@ -12,9 +12,9 @@ def _bestworks():
     time.sleep(1.5)
     print("-" * 80)
 
-    from db_folder.programs import show_programs_menu
+    from db_folder.flagships import show_flagships_menu
 
-    show_programs_menu()
+    show_flagships_menu()
 
     print("-" * 80)
     print("x--Cover Page" " | " "<--Chapter 3" " | " "Acknowledgments-->")

@@ -1,19 +1,45 @@
 {
     "best_works": [
         {
-            "title": "Portfolio Website",
-            "description": "A personal portfolio website showcasing my projects and skills.",
-            "category": "Programming "
+            "title": "BioPing",
+            "description": "A mobile navigation map that alerts users whenever they enter the vicinity of an animal's territory.",
+            "category": "Programming ",
+            "URL": "https://github.com/cedieboy07/BIOPing_STS-Project/tree/master/lib"
         },
         {
-            "title": "Task Manager App",
-            "description": "A mobile application to manage daily tasks and to-do lists.",
-            "category": "Writing"
+            "title": "Dungeon Messy: Tales of the Iris",
+            "category": "Writing",
+            "description": "An unofficial sourcebook for Dungeons and Dragons about the Continent of the Iris."
         },
         {
-            "title": "Inventory Management System",
-            "description": "A software program for managing inventory in a small business.",
-            "category": "Editing"
+            "title": "The Foundation of Future Works: Why Society Must Encourage Childhood Fixations",
+            "description": "An academic essay that explores how societal support for childhood interests can foster innovation and creativity.",
+            "category": "Writing",
+            "URL": "https://docs.google.com/document/d/13ig55yoNOffFDhExo_XGQcAoSNLmFfG2e0rpy6y66qI/edit?usp=sharing"
+        },
+        {
+            "title": "Bente",
+            "description": "A written screenplay of a short animated film about a newly 20-yr-old boy who struggles between passion and responsibility.",
+            "category": "Writing",
+            "URL": "https://docs.google.com/document/d/1TTsI0dXy1bbKTry_Be9DgSFXnylaj6EoaLRYMT6N7vA/edit?tab=t.ehm7fnhr2sym"
+        },
+        {
+            "title": "Karpintero",
+            "description": "A short Dagli film of a carpenter who remembers His past as He hangs on the cross",
+            "category": "Filming & Editing",
+            "URL": "https://drive.google.com/file/d/1FKp40bTr-i-js_4CBpvkB-kRJzpvhi_M/view?usp=sharing"
+        },
+        {
+            "title": "Soundcheck",
+            "description": "A wall-mounted device that measures the sound level in a room and provides feedback to help users maintain a healthy sound environment.",
+            "category": "Machine Designing",
+            "URL": "https://drive.google.com/drive/folders/1gSR3J5_0YmjR0VDjEIDFt9ANnjw4HYeI?usp=drive_link"
+        },
+        {
+            "title": "PiFeeder",
+            "description": "A remotely controlled pet feeder that dispenses food at scheduled times.",
+            "category": "Machine Designing",
+            "URL": "https://drive.google.com/drive/folders/1p2JEpAocSJg72JnPnD0IU-y0jtQzNXdu?usp=drive_link"
         }
     ]
 }

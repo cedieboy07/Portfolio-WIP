@@ -20,7 +20,8 @@ def load_flagships(file_path=None):
 flagship_items = [
     "1.) PROGRAMS",
     "2.) WRITINGS",
-    "3.) EDITS",
+    "3.) FILMS & EDITS",
+    "4.) MACHINE DESIGNS",
     "x.) CHAPTER SELECT",
 ]
 
@@ -60,12 +61,14 @@ def show_flagships_menu():
         elif user_choice == "2":
             display_flagships_by_category(flagships, "Writing")
         elif user_choice == "3":
-            display_flagships_by_category(flagships, "Editing")
+            display_flagships_by_category(flagships, "Filming & Editing")
+        elif user_choice == "4":
+            display_flagships_by_category(flagships, "Machine Designing")
         elif user_choice == "x":
             print("Returning to chapter selection...")
             break
         else:
-            print("Invalid choice. Please type '1', '2', '3', or 'x'.")
+            print("Invalid choice. Please type '1', '2', '3', '4', or 'x'.")
 
 
 if __name__ == "__main__":

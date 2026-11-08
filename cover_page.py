@@ -3,7 +3,12 @@ import sys
 from chap_1 import _learntskills
 from auth_info import _auth
 from assets.ascii import menu_banner
-from assets.terminal_ui import heading, menu as terminal_menu, narration
+from assets.terminal_ui import (
+    closing_message,
+    heading,
+    menu as terminal_menu,
+    narration,
+)
 
 
 def menu(chaps):
@@ -22,10 +27,7 @@ def main_select():
     )
 
     if user_chap == "x":
-        print("Thank you for coming!")
-        time.sleep(1.5)
-        print("Hope to see you again!")
-        time.sleep(1.5)
+        closing_message()
         sys.exit()
     elif user_chap == ">":
         _auth()

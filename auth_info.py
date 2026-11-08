@@ -1,11 +1,17 @@
 import time
 import runpy
 from assets.ascii import auth_banner
-from assets.terminal_ui import menu as terminal_menu, paragraph
+from assets.terminal_ui import menu as terminal_menu, narration, paragraph
 
 
 def _auth():
-    time.sleep(1.5)
+    narration(
+        [
+            "Every spellbook has an author.",
+            "Behind these pages is a student who studies the craft of code and writes beyond it.",
+            "Here is a little about Charles.",
+        ]
+    )
     auth_banner()
     time.sleep(1.5)
 

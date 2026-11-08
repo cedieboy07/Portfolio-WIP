@@ -3,12 +3,17 @@ import runpy
 import sys
 import json
 from assets.ascii import chap1_banner
-from assets.terminal_ui import menu as terminal_menu
+from assets.terminal_ui import menu as terminal_menu, narration
 
 
 def _learntskills():
-
-    time.sleep(1.5)
+    narration(
+        [
+            "Every craft begins with learning its first spell.",
+            "Some skills are still taking shape; others grow stronger with practice.",
+            "This is the collection Charles has gathered so far.",
+        ]
+    )
     chap1_banner()
     time.sleep(1.5)
 

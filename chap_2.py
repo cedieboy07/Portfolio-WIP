@@ -3,12 +3,17 @@ import runpy
 import sys
 import json
 from assets.ascii import chap2_banner
-from assets.terminal_ui import menu as terminal_menu
+from assets.terminal_ui import menu as terminal_menu, narration
 
 
 def _writtenworks():
-
-    time.sleep(1.5)
+    narration(
+        [
+            "Not every idea is written in code.",
+            "Some find their shape in essays, poems, and stories.",
+            "Turn through the words Charles has written.",
+        ]
+    )
     chap2_banner()
     time.sleep(1.5)
 

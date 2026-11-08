@@ -3,12 +3,17 @@ import runpy
 import sys
 import json
 from assets.ascii import chap3_banner
-from assets.terminal_ui import menu as terminal_menu
+from assets.terminal_ui import menu as terminal_menu, narration
 
 
 def _createdprograms():
-
-    time.sleep(1.5)
+    narration(
+        [
+            "Some ideas are too restless to stay on the page.",
+            "With code, they become tools, experiments, and worlds to explore.",
+            "These are the programs Charles has brought to life.",
+        ]
+    )
     chap3_banner()
     time.sleep(1.5)
 

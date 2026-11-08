@@ -3,12 +3,17 @@ import runpy
 import sys
 import json
 from assets.ascii import final_chap_banner
-from assets.terminal_ui import menu as terminal_menu
+from assets.terminal_ui import menu as terminal_menu, narration
 
 
 def _bestworks():
-
-    time.sleep(1.5)
+    narration(
+        [
+            "Every journey leaves a few works worth returning to.",
+            "Here are some of the projects Charles is proud to share.",
+            "Some chapters are finished; others are still being written.",
+        ]
+    )
     final_chap_banner()
     time.sleep(1.5)
 

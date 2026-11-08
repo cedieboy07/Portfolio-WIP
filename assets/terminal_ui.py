@@ -44,6 +44,15 @@ def narration(passages, character_delay=0.025, passage_delay=0.55):
             time.sleep(passage_delay)
 
 
+def closing_message():
+    narration(
+        [
+            "The spellbook closes, but its magic remains.",
+            "Thank you for exploring these pages. Until our paths cross again.",
+        ]
+    )
+
+
 def entry(title, details):
     print()
     print(f"  {title}")

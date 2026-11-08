@@ -3,11 +3,22 @@ import runpy
 import sys
 from assets.ascii import acknowledgements_banner
 from chap_1 import _learntskills
-from assets.terminal_ui import menu as terminal_menu, paragraph
+from assets.terminal_ui import (
+    closing_message,
+    menu as terminal_menu,
+    narration,
+    paragraph,
+)
 
 
 def _acknoledgements():
-    time.sleep(1.5)
+    narration(
+        [
+            "No one learns magic alone.",
+            "Teachers, friends, and family leave something behind in every success.",
+            "This page is written in gratitude.",
+        ]
+    )
     acknowledgements_banner()
     time.sleep(1.5)
 
@@ -37,4 +48,5 @@ def _acknoledgements():
     elif user_chap == "<":
         _bestworks()
     elif user_chap == ">":
+        closing_message()
         sys.exit()

@@ -1,6 +1,7 @@
 import json
 import sys
 from pathlib import Path
+from assets.terminal_ui import entry, heading, menu
 
 
 def load_programs(file_path=None):
@@ -18,41 +19,39 @@ def load_programs(file_path=None):
 
 
 programming_items = [
-    "1.) SOFTWARE PROGRAMS",
-    "2.) WEB PROGRAMS",
-    "3.) MOBILE APPLICATIONS",
-    "x.) CHAPTER SELECT",
+    ("1", "Software programs"),
+    ("2", "Web programs"),
+    ("3", "Mobile applications"),
+    ("x", "Return to chapter selection"),
 ]
 
 
 def display_programs_by_category(programs, target_category):
-    print(f"--- {target_category} ---")
+    heading(target_category, "CHAPTER III / CATALOG")
     filtered = [
         item
         for item in programs.get("created_programs", [])
         if item.get("category") == target_category
     ]
     for item in filtered:
-        print(f"Title: {item['title']} \n Description: {item['description']} \n Status: {item['status']} \n Link: {item.get('URL', 'N/A')}")
-        print("-" * 80)
+        entry(
+            item["title"],
+            [
+                ("Description", item["description"]),
+                ("Status", item["status"]),
+                ("Link", item.get("URL", "N/A")),
+            ],
+        )
 
 
 def show_programs_menu():
     programs = load_programs()
 
     while True:
-        width = 20
-
-        for item in programming_items:
-            print(f"|| {item:<{width}} ||")
-        print("-" * 80)
-
-        user_choice = (
-            input(
-                "Choose the number of the category you wish to view, or X to go back to chapter select: "
-            )
-            .strip()
-            .lower()
+        user_choice = menu(
+            "Programs Index",
+            programming_items,
+            "Choose a category, or X to return to chapter selection:",
         )
 
         if user_choice == "1":

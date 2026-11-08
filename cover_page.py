@@ -3,6 +3,7 @@ import sys
 from chap_1 import _learntskills
 from auth_info import _auth
 from assets.ascii import menu_banner
+from assets.terminal_ui import heading, menu as terminal_menu, narration
 
 
 def menu(chaps):
@@ -10,8 +11,15 @@ def menu(chaps):
 
 
 def main_select():
-    print("-" * 80)
-    user_chap = input("(x, >, or >>): ")
+    user_chap = terminal_menu(
+        "Open the Spellbook",
+        [
+            ("x", "Close the spellbook"),
+            (">", "About the author"),
+            (">>", "Chapter I: Learnt Skills"),
+        ],
+        "Choose a destination:",
+    )
 
     if user_chap == "x":
         print("Thank you for coming!")
@@ -26,18 +34,18 @@ def main_select():
 
 
 def main():
-    print("-" * 80)
-    print("Hello Everyone!!")
-    time.sleep(2.5)
-    print("Welcome to....")
-    time.sleep(2.5)
+    narration(
+        [
+            "There are different kinds of magic, and each one of them is studied and used by different people.",
+            "Some dabble in the Elements. Others delve in Primordial Forces. While a few would seek to control Dark Powers.",
+            "Needless to say, magic surrounds all of us, and encompasses all things.",
+            "To the point that anyone can create their own magic.",
+            "This young wizard, Charles, practices one particularly unique magic:",
+            "The magic of Syntax.",
+        ]
+    )
     menu_banner()
-    time.sleep(2.5)
-    print("Feel free to browse through each chapter and view their contents")
-    time.sleep(2.5)
-
-    print("-" * 80)
-    print(menu("x--End Program" " | " "About the Author-->" " | " "Chapter 1-->>"))
+    time.sleep(0.8)
     main_select()
 
 

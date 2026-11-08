@@ -1,6 +1,7 @@
 ﻿import json
 import sys
 from pathlib import Path
+from assets.terminal_ui import entry, heading, menu
 
 
 def load_skills(file_path=None):
@@ -27,31 +28,34 @@ rank_order = {
 }
 
 skill_items = [
-    "1.) ALL",
-    "2.) PROGRAMMING LANGUAGES",
-    "3.) PROGRAMMING FIELDS",
-    "4.) WRITING",
-    "5.) COMMUNICATION",
-    "6.) TECHNICAL SKILLS",
-    "7.) PROGRAMMING STUDIOS",
-    "x.) CHAPTER SELECT",
+    ("1", "All skills"),
+    ("2", "Programming languages"),
+    ("3", "Programming fields"),
+    ("4", "Writing"),
+    ("5", "Communication"),
+    ("6", "Technical skills"),
+    ("7", "Programming studios"),
+    ("x", "Return to chapter selection"),
 ]
 
 
 def display_all_skills(skills):
-    print("--- ALL SKILLS ---")
+    heading("All Skills", "CHAPTER I / CATALOG")
     for learnt_skills in sorted(
         skills.get("learnt_skills", []),
         key=lambda item: rank_order.get(item.get("mastery"), 999),
     ):
-        print(
-            f"Skill: {learnt_skills['title']} | Category: {learnt_skills['category']} | Mastery: {learnt_skills['mastery']}"
+        entry(
+            learnt_skills["title"],
+            [
+                ("Category", learnt_skills["category"]),
+                ("Rank", learnt_skills["mastery"]),
+            ],
         )
-        print("-" * 80)
 
 
 def display_skills_by_category(skills, target_category):
-    print(f"--- {target_category} ---")
+    heading(target_category, "CHAPTER I / CATALOG")
     filtered = [
         item
         for item in skills.get("learnt_skills", [])
@@ -60,25 +64,17 @@ def display_skills_by_category(skills, target_category):
     for item in sorted(
         filtered, key=lambda item: rank_order.get(item.get("mastery"), 999)
     ):
-        print(f"Skill: {item['title']} | Mastery: {item['mastery']}")
-        print("-" * 80)
+        entry(item["title"], [("Rank", item["mastery"])])
 
 
 def show_skills_menu():
     skills = load_skills()
 
     while True:
-        width = 25
-
-        for item in skill_items:
-            print(f"|| {item:<{width}} ||")
-
-        user_choice = (
-            input(
-                "Choose the number of the skill you wish to view, or X to go back to chapter select: "
-            )
-            .strip()
-            .lower()
+        user_choice = menu(
+            "Skills Index",
+            skill_items,
+            "Choose a category, or X to return to chapter selection:",
         )
 
         if user_choice == "1":

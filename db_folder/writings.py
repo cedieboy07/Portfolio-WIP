@@ -34,7 +34,7 @@ def display_writings_by_category(writings, target_category):
         if item.get("category") == target_category
     ]
     for item in filtered:
-        print(f"Title: {item['title']} \n Description: {item['description']} \n Link: {item['URL']}")
+        print(f"Title: {item['title']} \n Description: {item['description']} \n Link: {item.get('URL', 'N/A')}")
         print("-" * 80)
 
 

@@ -72,3 +72,13 @@ def final_chap_banner():
 
     for left, middle, right in zip(line1_lines, line2_lines, line3_lines):
         print(left + "   " + middle + "   " + right)
+
+def acknowledgements_banner():
+    line1 = pyfiglet.figlet_format("Acknowled", font="gothic")
+    line2 = pyfiglet.figlet_format("gements", font="gothic")
+
+    line1_lines = line1.splitlines()
+    line2_lines = line2.splitlines()
+
+    for left, right in zip(line1_lines, line2_lines):
+        print(left + right)

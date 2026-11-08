@@ -22,6 +22,7 @@ def _bestworks():
 
     from cover_page import main_select
     from chap_3 import _createdprograms
+    from ackno import _acknoledgements
     from cover_page import menu
 
     user_chap = input("(x, <, or >): ")
@@ -33,4 +34,4 @@ def _bestworks():
     elif user_chap == "<":
         _createdprograms()
     elif user_chap == ">":
-        runpy.run_path("chap_2.py")
+        _acknoledgements()

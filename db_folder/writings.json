@@ -39,8 +39,7 @@
             "id": 6,
             "title": "Factors Assisting New Students' Adaptation to The Philippine School's Senior High School:\nBasis for Improving Educational Environment",
             "category": "Academic Writing",
-            "description": "An analysis of the factors that assist new students in adapting to\nThe Philippine School's Senior High School and the basis for improving the educational environment.",
-            "URL": "<insert url here>"
+            "description": "An analysis of the factors that assist new students in adapting to\nThe Philippine School's Senior High School and the basis for improving the educational environment."
         },
         {
             "id": 7,
@@ -88,15 +87,13 @@
             "id": 13,
             "title": "Saurousschia: Oxolynn's City of Dinosaurs",
             "category": "Creative Writing",
-            "description": "A detailed account of the fictional city of Saurousschia and its history.",
-            "URL": "<insert url here>"
+            "description": "A detailed account of the fictional city of Saurousschia and its history."
         },
         {
             "id": 14,
             "title": "The Dorne Family: Renowened Prehistorians and Draconologists",
             "category": "Creative Writing",
-            "description": "A detailed character showcase of the Dorne family.",
-            "URL": "<insert url here>"
+            "description": "A detailed character showcase of the Dorne family."
         }
     ]
 }

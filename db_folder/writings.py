@@ -1,6 +1,7 @@
 import json
 import sys
 from pathlib import Path
+from assets.terminal_ui import entry, heading, menu
 
 
 def load_writings(file_path=None):
@@ -18,42 +19,38 @@ def load_writings(file_path=None):
 
 
 writing_items = [
-    "1.) JOURNALISM",
-    "2.) ACADEMIC WRITINGS",
-    "3.) CREATIVE WRITINGS",
-    "x.) CHAPTER SELECT",
+    ("1", "Journalism"),
+    ("2", "Academic writings"),
+    ("3", "Creative writings"),
+    ("x", "Return to chapter selection"),
 ]
 
 
 def display_writings_by_category(writings, target_category):
-    
-    print(f"--- {target_category} ---")
+    heading(target_category, "CHAPTER II / CATALOG")
     filtered = [
         item
         for item in writings.get("written_works", [])
         if item.get("category") == target_category
     ]
     for item in filtered:
-        print(f"Title: {item['title']} \n Description: {item['description']} \n Link: {item.get('URL', 'N/A')}")
-        print("-" * 80)
+        entry(
+            item["title"],
+            [
+                ("Description", item["description"]),
+                ("Link", item.get("URL", "N/A")),
+            ],
+        )
 
 
 def show_writings_menu():
     writings = load_writings()
 
     while True:
-        width = 20
-
-        for item in writing_items:
-            print(f"|| {item:<{width}} ||")
-        print("-" * 80)
-
-        user_choice = (
-            input(
-                "Choose the number of the category you wish to view, or X to go back to chapter select: "
-            )
-            .strip()
-            .lower()
+        user_choice = menu(
+            "Writings Index",
+            writing_items,
+            "Choose a category, or X to return to chapter selection:",
         )
 
         if user_choice == "1":

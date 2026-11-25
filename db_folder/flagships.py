@@ -1,6 +1,7 @@
 import json
 import sys
 from pathlib import Path
+from assets.terminal_ui import entry, heading, menu
 
 
 def load_flagships(file_path=None):
@@ -18,42 +19,33 @@ def load_flagships(file_path=None):
 
 
 flagship_items = [
-    "1.) PROGRAMS",
-    "2.) WRITINGS",
-    "3.) FILMS & EDITS",
-    "4.) MACHINE DESIGNS",
-    "x.) CHAPTER SELECT",
+    ("1", "Programs"),
+    ("2", "Writings"),
+    ("3", "Films & edits"),
+    ("4", "Machine designs"),
+    ("x", "Return to chapter selection"),
 ]
 
 
 def display_flagships_by_category(flagships, target_category):
-    print(f"--- {target_category} ---")
+    heading(target_category.strip(), "FINAL CHAPTER / CATALOG")
     filtered = [
         item
         for item in flagships.get("best_works", [])
         if item.get("category") == target_category
     ]
     for item in filtered:
-        print(f"Title: {item['title']} \n Description: {item['description']}")
-        print("-" * 80)
+        entry(item["title"], [("Description", item["description"])])
 
 
 def show_flagships_menu():
     flagships = load_flagships()
 
     while True:
-        width = 20
-
-        for item in flagship_items:
-            print(f"|| {item:<{width}} ||")
-        print("-" * 80)
-
-        user_choice = (
-            input(
-                "Choose the number of the category you wish to view, or X to go back to chapter select: "
-            )
-            .strip()
-            .lower()
+        user_choice = menu(
+            "Featured Works Index",
+            flagship_items,
+            "Choose a category, or X to return to chapter selection:",
         )
 
         if user_choice == "1":
